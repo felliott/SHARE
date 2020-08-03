@@ -15,7 +15,6 @@ dist: trusty
 
 env:
   global:
-    - DATABASE_PORT="54321"
     - PROJECT_DIR="$PWD"
     - WHEELHOUSE="$HOME/.cache/wheelhouse"
 
