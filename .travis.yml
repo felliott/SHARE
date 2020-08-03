@@ -31,6 +31,7 @@ addons:
       - postgresql-client-10
 
 before_install:
+    - sleep 10
     # python cache directories
     - |
       mkdir -p $HOME/.cache/downloads
