@@ -18,6 +18,9 @@ env:
     - PROJECT_DIR="$PWD"
     - WHEELHOUSE="$HOME/.cache/wheelhouse"
 
+addons:
+  postgresql: "10"
+
 services:
     - postgresql
     - elasticsearch
