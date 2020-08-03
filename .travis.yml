@@ -17,8 +17,8 @@ env:
   global:
     - PROJECT_DIR="$PWD"
     - WHEELHOUSE="$HOME/.cache/wheelhouse"
-    - PGPORT=54321
-    - DATABASE_PORT=54321
+    # - PGPORT=54321
+    # - DATABASE_PORT=54321
 
 services:
     - elasticsearch
