@@ -17,15 +17,21 @@ env:
   global:
     - PROJECT_DIR="$PWD"
     - WHEELHOUSE="$HOME/.cache/wheelhouse"
+    - PGPORT=54321
+    - DATABASE_PORT=54321
 
 services:
     - elasticsearch
 
 addons:
     postgresql: "10"
+    apt:
+      packages:
+      - postgresql-10
+      - postgresql-client-10
 
 before_install:
-  # python cache directories
+    # python cache directories
     - |
       mkdir -p $HOME/.cache/downloads
       mkdir -p $HOME/.cache/pip
